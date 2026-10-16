@@ -1,0 +1,154 @@
+{
+  "country": "Israel",
+  "target_type": "regression",
+  "holdout_start": "2026-07-13",
+  "holdout_end": "2026-09-28",
+  "protocol": "weekly forecasts; development training only; past holdout updates ARIMA state without refit",
+  "selection_cutoff": "2026-06-15",
+  "metrics": [
+    {
+      "model": "last_week",
+      "horizon": 1,
+      "MASE": 0.35017059960392266,
+      "sMAPE": 14.224766361282938,
+      "RMSE": 1017.2138418248152,
+      "baseline_MASE": 0.35017059960392266,
+      "MASE_improvement_pct": 0.0
+    },
+    {
+      "model": "rolling_mean_4",
+      "horizon": 1,
+      "MASE": 0.3139957290448808,
+      "sMAPE": 13.010849598528205,
+      "RMSE": 868.8512680785283,
+      "baseline_MASE": 0.35017059960392266,
+      "MASE_improvement_pct": 10.330641864268209
+    },
+    {
+      "model": "arima_110",
+      "horizon": 1,
+      "MASE": 0.35326042675444735,
+      "sMAPE": 14.266054965984706,
+      "RMSE": 1048.7504989534239,
+      "baseline_MASE": 0.35017059960392266,
+      "MASE_improvement_pct": -0.882377662207956
+    },
+    {
+      "model": "xgboost",
+      "horizon": 1,
+      "MASE": 0.5234391310604615,
+      "sMAPE": 19.585506556028008,
+      "RMSE": 1595.962732639295,
+      "baseline_MASE": 0.35017059960392266,
+      "MASE_improvement_pct": -49.48117621882664
+    },
+    {
+      "model": "last_week",
+      "horizon": 2,
+      "MASE": 0.4245996936786411,
+      "sMAPE": 17.49421335809171,
+      "RMSE": 1149.8748482624824,
+      "baseline_MASE": 0.4245996936786411,
+      "MASE_improvement_pct": 0.0
+    },
+    {
+      "model": "rolling_mean_4",
+      "horizon": 2,
+      "MASE": 0.34915164896367906,
+      "sMAPE": 14.378416391337772,
+      "RMSE": 977.479326294594,
+      "baseline_MASE": 0.4245996936786411,
+      "MASE_improvement_pct": 17.769217886451184
+    },
+    {
+      "model": "arima_110",
+      "horizon": 2,
+      "MASE": 0.4324250759881758,
+      "sMAPE": 17.732496799700247,
+      "RMSE": 1196.1344475618628,
+      "baseline_MASE": 0.4245996936786411,
+      "MASE_improvement_pct": -1.8430023445700883
+    },
+    {
+      "model": "xgboost",
+      "horizon": 2,
+      "MASE": 0.9548307922729925,
+      "sMAPE": 36.41979227041086,
+      "RMSE": 2615.326254239539,
+      "baseline_MASE": 0.4245996936786411,
+      "MASE_improvement_pct": -124.87788062222616
+    },
+    {
+      "model": "last_week",
+      "horizon": 3,
+      "MASE": 0.3887929592275704,
+      "sMAPE": 16.04048252111617,
+      "RMSE": 1089.083330145127,
+      "baseline_MASE": 0.3887929592275704,
+      "MASE_improvement_pct": 0.0
+    },
+    {
+      "model": "rolling_mean_4",
+      "horizon": 3,
+      "MASE": 0.3041532481318611,
+      "sMAPE": 12.194530621374824,
+      "RMSE": 1123.6313735125354,
+      "baseline_MASE": 0.3887929592275704,
+      "MASE_improvement_pct": 21.769867248590657
+    },
+    {
+      "model": "arima_110",
+      "horizon": 3,
+      "MASE": 0.39804312596374064,
+      "sMAPE": 16.32260117372006,
+      "RMSE": 1138.0721340532693,
+      "baseline_MASE": 0.3887929592275704,
+      "MASE_improvement_pct": -2.379201196067937
+    },
+    {
+      "model": "xgboost",
+      "horizon": 3,
+      "MASE": 0.7218804394156265,
+      "sMAPE": 26.478494810550284,
+      "RMSE": 2275.5681694657087,
+      "baseline_MASE": 0.3887929592275704,
+      "MASE_improvement_pct": -85.6721996328878
+    },
+    {
+      "model": "last_week",
+      "horizon": 4,
+      "MASE": 0.3317903551226776,
+      "sMAPE": 13.539436895653859,
+      "RMSE": 1133.0345316891273,
+      "baseline_MASE": 0.3317903551226776,
+      "MASE_improvement_pct": 0.0
+    },
+    {
+      "model": "rolling_mean_4",
+      "horizon": 4,
+      "MASE": 0.39548493100508003,
+      "sMAPE": 15.22164978029606,
+      "RMSE": 1347.3839197063817,
+      "baseline_MASE": 0.3317903551226776,
+      "MASE_improvement_pct": -19.197235513024992
+    },
+    {
+      "model": "arima_110",
+      "horizon": 4,
+      "MASE": 0.32721370176577264,
+      "sMAPE": 13.432450881307389,
+      "RMSE": 1143.1166512294765,
+      "baseline_MASE": 0.3317903551226776,
+      "MASE_improvement_pct": 1.3793810718858324
+    },
+    {
+      "model": "xgboost",
+      "horizon": 4,
+      "MASE": 0.6220101250644341,
+      "sMAPE": 21.657636996893718,
+      "RMSE": 2109.2433840499784,
+      "baseline_MASE": 0.3317903551226776,
+      "MASE_improvement_pct": -87.47082772627593
+    }
+  ]
+}
